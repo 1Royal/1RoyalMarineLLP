@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-y: scroll;
+}
+a.active hr {
+  display: block;
+}
+
+@media (max-width: 762px) {
+  a.active {
+    background: #000;
+    color: #fff;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1d2432;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+*::selection {
+  background: #111827;
+  color: #f9f3ee;
+}
